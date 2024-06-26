@@ -43,7 +43,7 @@ const Signup = () => {
       Swal.fire({
         position: "top",
         icon: "success",
-        title: "Employer signed up successfully",
+        title: " Signed up successfully",
         showConfirmButton: false,
         timer: 1500,
       }).then(() => {

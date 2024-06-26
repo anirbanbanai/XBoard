@@ -21,6 +21,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
       portfolio: user?.portfolio || "",
       employment: user?.employment || "",
       salary: user?.salary || "",
+      summary: user?.summary || "",
     },
   });
 
@@ -60,7 +61,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
               </label>
               <input
                 type="text"
-                {...register("location", { required: true })}
+                {...register("location")}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Enter your Location"
               />
@@ -76,7 +77,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
               </label>
               <input
                 type="text"
-                {...register("skill", { required: true })}
+                {...register("skill")}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Enter your Skill"
               />
@@ -93,7 +94,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
               </label>
               <input
                 type="text"
-                {...register("skill_level", { required: true })}
+                {...register("skill_level")}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Enter your Skill Level"
               />
@@ -109,7 +110,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
               </label>
               <input
                 type="text"
-                {...register("phone_number", { required: true })}
+                {...register("phone_number")}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Enter your Phone Number"
               />
@@ -128,7 +129,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
               </label>
               <input
                 type="text"
-                {...register("current_job", { required: true })}
+                {...register("current_job")}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Enter your Current Job"
               />
@@ -144,7 +145,7 @@ const EditProfileModal = ({ isOpen, onClose, user, onProfileUpdate }) => {
               </label>
               <input
                 type="text"
-                {...register("current_company", { required: true })}
+                {...register("current_company")}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Enter your Current Company"
               />

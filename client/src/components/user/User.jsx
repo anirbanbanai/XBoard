@@ -147,7 +147,7 @@ const User = () => {
                   className={`py-2 px-4 ${
                     item.role === "admin"
                       ? "text-green-600"
-                      : item.role === "employee"
+                      : item.role === "employer"
                       ? "text-red-400"
                       : "text-blue-600"
                   }`}

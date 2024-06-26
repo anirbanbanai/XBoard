@@ -49,6 +49,9 @@ const userDataSchema = new mongoose.Schema({
   salary: {
     type: String,
   },
+  summary: {
+    type: String,
+  },
   verify: { type: Boolean, default: false },
   experience: [
     {
