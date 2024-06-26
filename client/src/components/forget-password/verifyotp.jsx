@@ -14,7 +14,7 @@ const VerifyOTP = () => {
 
   function handleOtp(data) {
     axios
-      .get(`https://api-airtalx.vercel.app/v1/api/otp/verify-otp/${data.otp}`)
+      .get(`http://localhost:8080/v1/api/otp/verify-otp/${data.otp}`)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

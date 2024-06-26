@@ -10,7 +10,7 @@ const CheckoutForm = ({ amount, currency }) => {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("https://api-airtalx.vercel.app/v1/api/cit", {
+    fetch("http://localhost:8080/v1/api/cit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount, currency }),

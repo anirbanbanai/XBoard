@@ -1,5 +1,5 @@
 // src/models/user.model.js
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const userDataSchema = new mongoose.Schema({
   name: {
@@ -49,9 +49,6 @@ const userDataSchema = new mongoose.Schema({
   salary: {
     type: String,
   },
-  summary: {
-    type: String
-  },
   verify: { type: Boolean, default: false },
   experience: [
     {
@@ -78,7 +75,6 @@ const userDataSchema = new mongoose.Schema({
 });
 
 // Check if the model already exists, if not define it
-const User =
-  mongoose.models.UserData || mongoose.model("UserData", userDataSchema);
+const User = mongoose.models.UserData || mongoose.model('UserData', userDataSchema);
 
 module.exports = User;

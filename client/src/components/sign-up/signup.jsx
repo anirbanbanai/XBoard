@@ -34,7 +34,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        `https://api-airtalx.vercel.app/v1/api/userdata`,
+        `http://localhost:8080/v1/api/userdata`,
         formData
       );
       console.log(res);
@@ -74,7 +74,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        `https://api-airtalx.vercel.app/v1/api/userdata`,
+        `http://localhost:8080/v1/api/userdata`,
         formData
       );
       console.log(res);
@@ -237,7 +237,7 @@ const Signup = () => {
         const { user } = result;
         console.log(user.photoURL);
         const rrr = await axios.post(
-          `https://api-airtalx.vercel.app/v1/api/userdata`,
+          `http://localhost:8080/v1/api/userdata`,
           {
             name: user.displayName,
             email: user.email,
@@ -248,7 +248,7 @@ const Signup = () => {
         // console.log(rrr.data);
 
         await axios.put(
-          `https://api-airtalx.vercel.app/v1/api/userdata/${rrr.data._id}`,
+          `http://localhost:8080/v1/api/userdata/${rrr.data._id}`,
           {
             image: user.photoURL,
           }

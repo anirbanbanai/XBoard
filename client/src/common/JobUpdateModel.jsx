@@ -17,7 +17,7 @@ const JobUpdateModal = ({ isOpen, onClose, jobId, onUpdate }) => {
     if (jobId) {
       const fetchJob = async () => {
         try {
-          const response = await axios.get(`https://api-airtalx.vercel.app/v1/api/postjobs/${jobId}`);
+          const response = await axios.get(`http://localhost:8080/v1/api/postjobs/${jobId}`);
           const jobData = response.data;
           setInitialValues(jobData);
           setValue("job_title", jobData.job_title);
@@ -37,7 +37,7 @@ const JobUpdateModal = ({ isOpen, onClose, jobId, onUpdate }) => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.put(
-        `https://api-airtalx.vercel.app/v1/api/postjobs/${jobId}`,
+        `http://localhost:8080/v1/api/postjobs/${jobId}`,
         data
       );
       onClose();

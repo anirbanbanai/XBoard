@@ -11,7 +11,7 @@ import axios from "axios";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 const JobSeekerProfile = () => {
   const { user } = useAuthUser(auth);
-  // console.log(`https://api-airtalx.vercel.app/v1/api/userdata/${user?._id}`);;
+  // console.log(`http://localhost:8080/v1/api/userdata/${user?._id}`);;
   const [profileData, setProfileData] = useState(user);
   // console.log(user);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -108,7 +108,7 @@ const JobSeekerProfile = () => {
         try {
           // Make API call to delete user from your database
           await axios.delete(
-            `https://api-airtalx.vercel.app/v1/api/userdata/${user?._id}`
+            `http://localhost:8080/v1/api/userdata/${user?._id}`
           );
 
           // Delete user from Firebase Authentication

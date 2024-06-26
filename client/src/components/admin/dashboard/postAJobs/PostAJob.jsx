@@ -33,9 +33,9 @@ const PostAJob = () => {
 
     try {
       // console.log(data);
-      await axios.post(`https://api-airtalx.vercel.app/v1/api/postjobs`, cleanedData);
+      await axios.post(`http://localhost:8080/v1/api/postjobs`, cleanedData);
 
-      await axios.post(`https://api-airtalx.vercel.app/v1/api/history`, historyData);
+      await axios.post(`http://localhost:8080/v1/api/history`, historyData);
 
       Swal.fire(
         {

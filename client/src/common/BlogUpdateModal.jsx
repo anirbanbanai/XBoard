@@ -13,7 +13,7 @@ const BlogUpdateModal = ({ isOpen, onClose, user, onUpdate }) => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.put(
-        `https://api-airtalx.vercel.app/v1/api/blogs/${user}`,
+        `http://localhost:8080/v1/api/blogs/${user}`,
         data
       );
       console.log("Updated blog data:", response.data);

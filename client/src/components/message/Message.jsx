@@ -148,7 +148,7 @@ function Message() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const result = await axios.get(`https://api-airtalx.vercel.app/v1/api/userdata`);
+        const result = await axios.get(`http://localhost:8080/v1/api/userdata`);
         const fetchedUsers = result.data.filter((u) => u._id !== user?._id); // Filter out the current user
 
         if (fetchedUsers.length > 0) {
@@ -174,7 +174,7 @@ function Message() {
       if (selectedUser && user) {
         try {
           const response = await axios.get(
-            `https://api-airtalx.vercel.app/v1/api/message/${user?._id}/${selectedUser?._id}`
+            `http://localhost:8080/v1/api/message/${user?._id}/${selectedUser?._id}`
           );
           const sortedMessages = response.data.sort(
             (a, b) => new Date(a.timestamp) - new Date(b.timestamp)
@@ -202,7 +202,7 @@ function Message() {
       if (user) {
         try {
           const response = await axios.get(
-            `https://api-airtalx.vercel.app/v1/api/message/new/${user?._id}`
+            `http://localhost:8080/v1/api/message/new/${user?._id}`
           );
           const sortedNewMessages = response.data.sort(
             (a, b) => new Date(a.timestamp) - new Date(b.timestamp)
@@ -242,7 +242,7 @@ function Message() {
 
       try {
         const response = await axios.post(
-          `https://api-airtalx.vercel.app/v1/api/message`,
+          `http://localhost:8080/v1/api/message`,
           newMessage
         );
         const updatedMessages = [...messages, response.data].sort(
@@ -307,7 +307,7 @@ function Message() {
   const markAsRead = async (messageId) => {
     try {
       await axios.patch(
-        `https://api-airtalx.vercel.app/v1/api/message/read/${messageId}`
+        `http://localhost:8080/v1/api/message/read/${messageId}`
       );
       setNewMessages(
         newMessages.filter((message) => message?._id !== messageId)

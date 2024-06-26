@@ -29,7 +29,7 @@ const JobApply = () => {
   const onSubmit = async (data) => {
     console.log(data);
     const {subject,message,contact_info} = data;
-    const res = await axios.get(`https://api-airtalx.vercel.app/v1/api/postjobs/${id}`);
+    const res = await axios.get(`http://localhost:8080/v1/api/postjobs/${id}`);
     const { job_title, job_type, job_description,_id } = res?.data;
     const alldata = {
       employer_name: user?.name,
@@ -45,7 +45,7 @@ const JobApply = () => {
     console.log(alldata);
 
     const po = await axios.post(
-      `https://api-airtalx.vercel.app/v1/api/application`,
+      `http://localhost:8080/v1/api/application`,
       alldata
     );
     if (po?.data) {
@@ -67,7 +67,7 @@ const JobApply = () => {
     const fetchJobs = async () => {
       try {
         const res = await axios.get(
-          `https://api-airtalx.vercel.app/v1/api/postjobs/${id}`
+          `http://localhost:8080/v1/api/postjobs/${id}`
         );
         setJob(res.data);
         setLoading(false);

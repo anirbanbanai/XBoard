@@ -14,7 +14,7 @@ const SingleProfile = () => {
     const fetchJobs = async () => {
       try {
         const res = await axios.get(
-          `https://api-airtalx.vercel.app/v1/api/userdata/${id}`
+          `http://localhost:8080/v1/api/userdata/${id}`
         );
         setUser(res.data);
         //   setLoading(false);

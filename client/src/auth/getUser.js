@@ -11,7 +11,7 @@ const useAuthUser = (auth) => {
       if (currentUser) {
         try {
           const response =
-           await axios.get(`https://api-airtalx.vercel.app/v1/api/userdata/email/${currentUser.email}`);
+           await axios.get(`http://localhost:8080/v1/api/userdata/email/${currentUser.email}`);
           setUser(response.data);
         } catch (error) {
           console.error("Error fetching user data:", error);

@@ -63,7 +63,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get(`https://api-airtalx.vercel.app/v1/api/userdata`);
+        const res = await axios.get(`http://localhost:8080/v1/api/userdata`);
         setData(res.data);
       } catch (error) {
         console.error("There was an error fetching the user!", error);
@@ -71,7 +71,7 @@ const Dashboard = () => {
       }
 
       try {
-        const res = await axios.get(`https://api-airtalx.vercel.app/v1/api/postjobs`);
+        const res = await axios.get(`http://localhost:8080/v1/api/postjobs`);
         setPostData(res.data);
       } catch (error) {
         console.error("There was an error fetching the jobs!", error);

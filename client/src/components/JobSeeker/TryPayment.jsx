@@ -11,7 +11,7 @@
 //       amount : 5000,
 //     }
 
-//     const response  = await axios.post("https://api-airtalx.vercel.app/v1/api/paymen/str", body);
+//     const response  = await axios.post("http://localhost:8080/v1/api/paymen/str", body);
 
 //     const session = await response.json( )
 //     const result = stripe.redirectToCheckout({

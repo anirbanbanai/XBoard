@@ -40,7 +40,7 @@ const FindJob = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get(`https://api-airtalx.vercel.app/v1/api/postjobs`);
+        const res = await axios.get(`http://localhost:8080/v1/api/postjobs`);
         setJobs(res.data);
         setLoading(false);
       } catch (error) {
@@ -106,7 +106,7 @@ const FindJob = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`https://api-airtalx.vercel.app/v1/api/postjobs/${id}`);
+        await axios.delete(`http://localhost:8080/v1/api/postjobs/${id}`);
         Swal.fire({
           title: "Deleted!",
           text: "Job deleted successfully",

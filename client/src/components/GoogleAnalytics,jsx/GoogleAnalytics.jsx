@@ -73,7 +73,7 @@ const GoogleAnalytics = () => {
         // Simulating an API call with static data
         // Replace this with your actual API endpoint
         const response = await axios.get(
-          "https://api-airtalx.vercel.app/v1/api/userdata"
+          "http://localhost:8080/v1/api/userdata"
         ); // Replace with your actual API endpoint
 
         // Extract users from the response
@@ -205,7 +205,7 @@ export default GoogleAnalytics;
 //     // Function to fetch user data
 //     const fetchUserData = async () => {
 //       try {
-//         const response = await axios.get("https://api-airtalx.vercel.app/v1/api/userdata"); // Replace with your actual API endpoint
+//         const response = await axios.get("http://localhost:8080/v1/api/userdata"); // Replace with your actual API endpoint
 //         const users = response.data;
 
 //         // Initialize a dictionary to count the number of users in each country

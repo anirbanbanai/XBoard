@@ -33,7 +33,7 @@ const Postblog = () => {
     };
     console.log(cleanedData);
     try {
-      await axios.post(`https://api-airtalx.vercel.app/v1/api/blogs`, cleanedData);
+      await axios.post(`http://localhost:8080/v1/api/blogs`, cleanedData);
       Swal.fire({
         icon: 'success',
         title: 'Blog created successfully',

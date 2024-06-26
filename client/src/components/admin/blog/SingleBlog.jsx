@@ -15,7 +15,7 @@ const SingleBlog = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get(`https://api-airtalx.vercel.app/v1/api/blogs/${id}`);
+        const res = await axios.get(`http://localhost:8080/v1/api/blogs/${id}`);
         setBlog(res.data);
         // setLoading(false);
       } catch (error) {

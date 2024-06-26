@@ -20,7 +20,7 @@ const JobDetails = () => {
     const fetchJobs = async () => {
       try {
         const res = await axios.get(
-          `https://api-airtalx.vercel.app/v1/api/postjobs/${id}`
+          `http://localhost:8080/v1/api/postjobs/${id}`
         );
         setJobDetails(res.data);
         setLoading(false);

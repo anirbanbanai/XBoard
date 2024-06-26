@@ -119,7 +119,7 @@ const Navbar = () => {
 
           <div className="flex items-center">
             <img className="w-[42px] h-[42px]" src={img1} alt="" />
-            <h2 className="text-3xl font-semibold">airTalX</h2>
+            <h2 className="text-3xl font-semibold">XBoard</h2>
           </div>
           <div className="hidden navbar-center lg:flex">
             <ul className="px-1 menu menu-horizontal">{nav}</ul>
@@ -128,7 +128,7 @@ const Navbar = () => {
 
         <div className="navbar-end pr-[4%]">
           <div className="flex items-center justify-center gap-8 lg:gap-16">
-            {/* <label className="switch">
+            <label className="switch">
               <input onChange={handletoggle} type="checkbox" />
 
               <div className="slider">
@@ -136,7 +136,7 @@ const Navbar = () => {
                   <IoIosSunny className="text-2xl text-warning" />
                 </div>
               </div>
-            </label> */}
+            </label>
 
             {!user ? (
               <Link to="/login">

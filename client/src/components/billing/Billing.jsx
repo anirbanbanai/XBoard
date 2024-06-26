@@ -33,7 +33,7 @@ const Billing = () => {
     };
     try {
       const result = await axios.post(
-        `https://api-airtalx.vercel.app/v1/api/auth/register`,
+        `http://localhost:8080/v1/api/auth/register`,
         alldata
       );
       if (result.data.acknowledgement === true) {
