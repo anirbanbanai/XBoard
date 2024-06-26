@@ -1,0 +1,162 @@
+[
+    {
+        "name": "John",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAe9NZZk7nUE_anJir2Scf7tsqMHRdEpCbJg&s",
+        "role": "Web Developer",
+        "location": "BD",
+        "employment": "Full-time",
+        "skill": ["Web Development", "JavaScript"]
+    },
+    {
+        "name": "Jane",
+        "img": "https://via.placeholder.com/150",
+        "role": "Software Engineer",
+        "location": "US",
+        "employment": "Part-time",
+        "skill": ["Java", "Spring"]
+    },
+    {
+        "name": "Sam",
+        "img": "https://via.placeholder.com/150",
+        "role": "Data Scientist",
+        "location": "UK",
+        "employment": "Full-time",
+        "skill": ["Python", "Machine Learning"]
+    },
+    {
+        "name": "Sara",
+        "img": "https://via.placeholder.com/150",
+        "role": "UI/UX Designer",
+        "location": "CA",
+        "employment": "Contract",
+        "skill": ["Adobe XD", "Figma"]
+    },
+    {
+        "name": "Mike",
+        "img": "https://via.placeholder.com/150",
+        "role": "Project Manager",
+        "location": "AU",
+        "employment": "Full-time",
+        "skill": ["Agile", "Scrum"]
+    },
+    {
+        "name": "Anna",
+        "img": "https://via.placeholder.com/150",
+        "role": "DevOps Engineer",
+        "location": "DE",
+        "employment": "Full-time",
+        "skill": ["AWS", "Docker"]
+    },
+    {
+        "name": "Tom",
+        "img": "https://via.placeholder.com/150",
+        "role": "Backend Developer",
+        "location": "IN",
+        "employment": "Part-time",
+        "skill": ["Node.js", "Express"]
+    },
+    {
+        "name": "Lucy",
+        "img": "https://via.placeholder.com/150",
+        "role": "Frontend Developer",
+        "location": "FR",
+        "employment": "Full-time",
+        "skill": ["React", "CSS"]
+    },
+    {
+        "name": "Paul",
+        "img": "https://via.placeholder.com/150",
+        "role": "System Administrator",
+        "location": "RU",
+        "employment": "Contract",
+        "skill": ["Linux", "Networking"]
+    },
+    {
+        "name": "Emma",
+        "img": "https://via.placeholder.com/150",
+        "role": "Product Manager",
+        "location": "JP",
+        "employment": "Full-time",
+        "skill": ["Product Management", "Market Research"]
+    },
+    {
+        "name": "Jack",
+        "img": "https://via.placeholder.com/150",
+        "role": "Mobile Developer",
+        "location": "BD",
+        "employment": "Part-time",
+        "skill": ["Flutter", "iOS"]
+    },
+    {
+        "name": "Olivia",
+        "img": "https://via.placeholder.com/150",
+        "role": "Database Administrator",
+        "location": "US",
+        "employment": "Full-time",
+        "skill": ["SQL", "Oracle"]
+    },
+    {
+        "name": "Chris",
+        "img": "https://via.placeholder.com/150",
+        "role": "Cybersecurity Analyst",
+        "location": "UK",
+        "employment": "Contract",
+        "skill": ["Cybersecurity", "Penetration Testing"]
+    },
+    {
+        "name": "Sophia",
+        "img": "https://via.placeholder.com/150",
+        "role": "Cloud Engineer",
+        "location": "CA",
+        "employment": "Full-time",
+        "skill": ["Azure", "GCP"]
+    },
+    {
+        "name": "David",
+        "img": "https://via.placeholder.com/150",
+        "role": "Network Engineer",
+        "location": "AU",
+        "employment": "Full-time",
+        "skill": ["Cisco", "Networking"]
+    },
+    {
+        "name": "Ella",
+        "img": "https://via.placeholder.com/150",
+        "role": "Business Analyst",
+        "location": "DE",
+        "employment": "Part-time",
+        "skill": ["Business Analysis", "SQL"]
+    },
+    {
+        "name": "Daniel",
+        "img": "https://via.placeholder.com/150",
+        "role": "QA Engineer",
+        "location": "IN",
+        "employment": "Full-time",
+        "skill": ["Testing", "Automation"]
+    },
+    {
+        "name": "Grace",
+        "img": "https://via.placeholder.com/150",
+        "role": "Technical Support",
+        "location": "FR",
+        "employment": "Contract",
+        "skill": ["Technical Support", "Customer Service"]
+    },
+    {
+        "name": "James",
+        "img": "https://via.placeholder.com/150",
+        "role": "AI Engineer",
+        "location": "RU",
+        "employment": "Full-time",
+        "skill": ["Artificial Intelligence", "Python"]
+    },
+    {
+        "name": "Lily",
+        "img": "https://via.placeholder.com/150",
+        "role": "Digital Marketer",
+        "location": "JP",
+        "employment": "Part-time",
+        "skill": ["SEO", "Content Marketing"]
+    }
+]
